@@ -1,0 +1,11 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php">
+    <testsuite name="Currency">
+        <directory suffix="Test.php">./tests/Currency</directory>
+    </testsuite>
+    <logging>
+        <log type="coverage-html" target="/tmp/report" lowUpperBound="35"
+             highLowerBound="70"/>
+        <log type="coverage-clover" target="/tmp/coverage.xml"/>
+    </logging>
+</phpunit>
